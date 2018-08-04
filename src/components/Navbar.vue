@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="nav in navlink">{{nav}}</li>
+            <li v-for="(nav, index) in navlink" :key="index">{{nav}}</li>
         </ul>
     </div>    
 </template>
